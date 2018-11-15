@@ -89,3 +89,21 @@ function checkOut(){
     }
 
 }
+
+function transperent(button){
+    if(button == 1){
+        document.getElementById("fader1").classList.add("transperent");
+    }
+    else{
+        document.getElementById("fader2").classList.add("transperent");
+    }
+}
+
+function solid(button){
+    if(button == 1){
+        document.getElementById("fader1").classList.remove("transperent");
+    }
+    else{
+        document.getElementById("fader2").classList.remove("transperent");
+    }
+}

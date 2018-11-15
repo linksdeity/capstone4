@@ -17,7 +17,7 @@
 
 
         <div>
-            <img onclick="addToCart()" src="Add-To-Cart-Button-Transparent-Background.png" alt="add to cart" >
+            <img id="fader1" onclick="addToCart()" onmousedown="transperent(1)" onmouseup="solid(1)" src="Add-To-Cart-Button-Transparent-Background.png" alt="add to cart" >
         </div>
 
         <div>
@@ -31,12 +31,12 @@
         </div>
 
         <div>
-            <img onclick="checkOut()" src="checkout-button.png" alt="checkout">
+            <img id="fader2" onclick="checkOut()" onmousedown="transperent(2)" onmouseup="solid(2)" src="checkout-button.png" alt="checkout">
         </div>
 
 
 
-        <div>
+        <div class = "music">
             <audio controls autoplay loop>
                 <source src="supersonicracing.wav" type="audio/wav">
             </audio> 
