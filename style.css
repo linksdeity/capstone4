@@ -1,0 +1,31 @@
+.product{
+    background-color: rgb(180, 17, 17);
+    color: rgb(194, 189, 189);
+}
+
+.product-active{
+    background-color: blue;
+    color: white;
+}
+
+.background{
+    background-size: cover ;
+}
+
+div ul{
+    height:125px; width:20%;
+    border-style: ridge;
+    border-color: blue;
+
+}
+
+div ul{
+    overflow:auto; overflow-y:scroll;
+}
+
+.total{
+    font-size: large;
+    font-weight: bold;
+    color:blue;
+}
+

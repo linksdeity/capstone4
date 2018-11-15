@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <link href="style.css" rel="stylesheet"/>
     </head>
 
-    <body>
+    <body class="background" background ="sonicChiliDog.jpg">
 
-        <h1>WELCOME TO EXTREME SHOPPING CART SIMULATOR!</h1>
+        <h1 id = "header">WELCOME TO SONIC'S CHILI DOG STAND!!</h1>
 
         <div>
             <h2>Items for sale:</h2>
@@ -22,15 +22,16 @@
         <div>
             <h2>Shopping Cart:</h2>
                 <ul id="cartList">
-                    <li>Empty</li>
                 </ul>
         </div>
 
         <div>
-            <p>Total cost: $<span id = "cost">0.00</span></p>
+            <p class = "total">Total cost: $<span id = "total">0.00</span></p>
         </div>
 
-
+        <div>
+            <img onclick="checkOut()" src="checkout-button.png" alt="checkout">
+        </div>
 
         <script src="javascript.js"></script>
     </body>
