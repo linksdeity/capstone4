@@ -71,13 +71,14 @@ var receipt;
 
 function checkOut(){
 
-    receipt = "";
+    receipt = "Here is your receipt...\n";
 
     purchasing.forEach(element => {
         receipt += element.name + " - - " + element.price.toFixed(2) + "\n";
     });
 
-    alert("Here is your receipt...\n" + receipt + "\nTotal: " + totalCost.toFixed(2));
+    receipt = receipt.replace(/\n/g, "\r\n");
+    download("receipt",  receipt + "\nTotal: " + totalCost.toFixed(2));
 
     totalCost = 0.00
     document.getElementById("total").innerHTML = 0.00.toFixed(2);
@@ -107,3 +108,16 @@ function solid(button){
         document.getElementById("fader2").classList.remove("transperent");
     }
 }
+
+function download(filename, text) {
+    var element = document.createElement('a');
+    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+    element.setAttribute('download', filename);
+  
+    element.style.display = 'none';
+    document.body.appendChild(element);
+  
+    element.click();
+  
+    document.body.removeChild(element);
+  }
