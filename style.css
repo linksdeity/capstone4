@@ -36,3 +36,9 @@ div ul{
 .transperent{
     opacity: 0.7;
 }
+
+.header{
+    color: red;
+    font-size: xx-large;
+    font-family: Tahoma;
+}
