@@ -92,11 +92,14 @@ function checkOut(){
 }
 
 function transperent(button){
-    if(button == 1){
+    if(button === 1){
         document.getElementById("fader1").classList.add("transperent");
     }
-    else{
+    else if (button === 2){
         document.getElementById("fader2").classList.add("transperent");
+    }
+    else{
+        document.getElementById("fader3").classList.add("transperent");
     }
 }
 
@@ -104,8 +107,11 @@ function solid(button){
     if(button == 1){
         document.getElementById("fader1").classList.remove("transperent");
     }
-    else{
+    else if (button === 2){
         document.getElementById("fader2").classList.remove("transperent");
+    }
+    else{
+        document.getElementById("fader3").classList.remove("transperent");
     }
 }
 
@@ -120,4 +126,20 @@ function download(filename, text) {
     element.click();
   
     document.body.removeChild(element);
+  }
+
+  function clearCart(){
+
+    var myNode = document.getElementById("cartList");
+    while (myNode.firstChild) {
+    myNode.removeChild(myNode.firstChild);
+    }
+
+    cost = [];
+    purchasing = [];
+
+    totalCost = 0;
+
+    document.getElementById("total").innerHTML = 0.00.toFixed(2);
+
   }

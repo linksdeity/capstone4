@@ -13,10 +13,14 @@
 }
 
 div ul{
-    height:125px; width:20%;
+    height:125px; width:30%;
     border-style: ridge;
     border-color: blue;
 
+}
+
+li{
+    cursor: crosshair;
 }
 
 div ul{
@@ -41,4 +45,12 @@ div ul{
     color: red;
     font-size: xx-large;
     font-family: Tahoma;
+}
+
+.clearcart{
+    float: right;
+    cursor: context-menu;
+    border-color: red;
+    border-style: groove;
+    background-color: white;
 }
